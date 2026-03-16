@@ -1,0 +1,17 @@
+[project]
+name = "sample-a2ui-agent"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "google-adk>=1.8.0",
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.20.0",
+    "a2ui-agent",
+    "python-dotenv>=1.0.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+a2ui-agent = { path = "/Users/taison-tsukada/source/taison-tsukada/A2UI/agent_sdks/python" }
