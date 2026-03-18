@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [],
   server: {
     port: 5173,
     proxy: {
@@ -10,6 +9,6 @@ export default defineConfig({
     },
   },
   optimizeDeps: {
-    include: ['@a2ui/react'],
+    include: ['@a2ui/lit', '@a2ui/web_core'],
   },
 });
